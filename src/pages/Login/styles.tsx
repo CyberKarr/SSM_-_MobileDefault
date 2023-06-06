@@ -3,42 +3,41 @@ import { StyleSheet } from 'react-native'
 import { COLORS } from '../../assets/COLORS';
 
 const styles = StyleSheet.create({
-    button: {
-        backgroundColor: COLORS.SUCCESS,
-        height: 60,
-        flexDirection: 'row',
-        borderRadius: 10,
-        alignItems: 'center',
-        overflow: 'hidden',
-        marginTop: 8
+
+    container: {
+        padding: 0,
+        backgroundColor: COLORS.MAIN,
+        flex: 1
     },
 
-    buttonText: {
-        flex: 1,
+    header: {
+        flex: 5,
         justifyContent: 'center',
-        textAlign: 'center',
-        color: COLORS.WHITE,
-        fontSize: 20
+        alignItems: 'center',
     },
 
-    buttonIcon: {
+    body: {
+        flex: 10,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        backgroundColor: COLORS.WHITE,
+        alignContent: 'stretch',
+    },
 
+    footer: {
+        flex: 1,
+        // maxHeight: '1rem'
     },
 
     bottonForm: {
+        // maxHeight: '100%',
         // flex: 3
     },
 
     logo: {
         padding: 30,
-        // flex: 2,
         alignItems: 'center',
-    },
-
-    container: {
-        flex: 1,
-        padding: 0,
-        backgroundColor: COLORS.MAIN,
+        justifyContent: 'flex-start',
     },
 
     logoIcon: {
@@ -47,36 +46,32 @@ const styles = StyleSheet.create({
     },
 
     logotext: {
-        fontFamily: 'Roboto_500Medium',
+        fontFamily: 'Spartan_100Thin',
         color: COLORS.MAIN,
-        fontSize: 30
-    },
-
-    header: {
-        flex: 5,
-        justifyContent: 'center',
-        alignItems: 'center',
-        // maxHeight: 260
-    },
-
-    body: {
-        flex: 10,
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        backgroundColor: COLORS.WHITE,
-        alignContent: 'stretch'
-    },
-
-    footer: {
-        flex: 1,
+        fontSize: 42
     },
 
     text: {
-        fontFamily: 'Ubuntu_700Bold',
         fontSize: 48,
         color: 'white',
         textAlign: 'center'
-    }
+    },
+
+    forgotPassword: {
+        alignContent: 'flex-start',
+        fontSize: 16,
+        color: COLORS.MAIN,
+        textDecorationLine: 'underline',
+        marginVertical: 6
+    },
+
+    forgotPasswordPress: {
+        alignContent: 'flex-start',
+        fontSize: 16,
+        color: COLORS.SUCCESS,
+        textDecorationLine: 'underline',
+        marginVertical: 6,
+    },
 
 })
 

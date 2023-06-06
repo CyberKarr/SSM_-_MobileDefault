@@ -4,7 +4,7 @@ import { COLORS } from '../assets/COLORS';
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: COLORS.SUCCESS,
+        // backgroundColor: COLORS.SUCCESS,
         height: 60,
         flexDirection: 'row',
         borderRadius: 10,
@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
         height: 60,
         backgroundColor: COLORS.WHITE,
         marginBottom: 8,
-        paddingHorizontal: 24,
+        paddingHorizontal: 16,
         fontSize: 20,
         borderBottomWidth: .5,
         width: 250,
-        maxWidth: 250,
+        maxWidth: 350,
     },
 })
 
