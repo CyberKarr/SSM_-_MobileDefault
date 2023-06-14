@@ -6,13 +6,13 @@ const styles = StyleSheet.create({
 
     container: {
         padding: 0,
-        backgroundColor: COLORS.MAIN,
         flex: 1
     },
 
     header: {
         flex: 5,
         justifyContent: 'center',
+        backgroundColor: COLORS.MAIN,
         alignItems: 'center',
     },
 
@@ -20,12 +20,12 @@ const styles = StyleSheet.create({
         flex: 10,
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        backgroundColor: COLORS.WHITE,
         alignContent: 'stretch',
     },
 
     footer: {
         flex: 1,
+        backgroundColor: COLORS.MAIN,
         // maxHeight: '1rem'
     },
 
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     forgotPasswordPress: {
         alignContent: 'flex-start',
         fontSize: 16,
-        color: COLORS.SUCCESS,
+        color: COLORS.EFFECT,
         textDecorationLine: 'underline',
         marginVertical: 6,
     },

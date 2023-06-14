@@ -1,11 +1,12 @@
 
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 import { COLORS } from '../assets/COLORS';
+import { RFValue } from 'react-native-responsive-fontsize'
 
 const styles = StyleSheet.create({
     button: {
         // backgroundColor: COLORS.SUCCESS,
-        height: 60,
+        height: RFValue(38),
         flexDirection: 'row',
         borderRadius: 10,
         alignItems: 'center',
@@ -18,7 +19,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center',
         color: COLORS.WHITE,
-        fontSize: 20
+        fontSize: RFValue(14),
+        maxWidth: RFValue(220)
     },
 
     buttonIcon: {
@@ -26,14 +28,14 @@ const styles = StyleSheet.create({
     },
 
     input: {
-        height: 60,
+        height: RFValue(40),
         backgroundColor: COLORS.WHITE,
-        marginBottom: 8,
-        paddingHorizontal: 16,
-        fontSize: 20,
+        marginBottom: RFValue(5),
+        paddingHorizontal: RFValue(12),
+        fontSize: RFValue(13),
         borderBottomWidth: .5,
-        width: 250,
-        maxWidth: 350,
+        width: RFValue(200),
+        maxWidth: RFValue(220),
     },
 })
 

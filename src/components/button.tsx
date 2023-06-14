@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 import styles from './styles'
 import { COLORS } from "../assets/COLORS";
 
-export function Button(props: { text: String, action: () => {}, type: String }) {
+export function Button(props: { text: String, action: () => any, type: String }) {
 
     let color;
 

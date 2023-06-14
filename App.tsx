@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import * as Font from 'expo-font';
 import { StatusBar } from 'react-native';
 
-import Home from './src/pages/Home'
-import Login from './src/pages/Login';
+import Routes from './src/pages/routes';
 
-import { useFonts } from './hooks/useFonts';
 import AppLoading from 'expo-app-loading';
+import { useFonts } from './hooks/useFonts';
 
 export default function App() {
 
@@ -28,7 +26,7 @@ export default function App() {
     return (
       <>
         <StatusBar barStyle='default' backgroundColor='transparent' translucent />
-        <Login />
+        <Routes />
       </>
     );
   }
