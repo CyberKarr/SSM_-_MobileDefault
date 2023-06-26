@@ -4,7 +4,8 @@ export const COLORS = {
     WHITE: '#FFF',
     EFFECT: '#FF6842',
     BACKGROUND: '#FFF',
-    BLACK: '#30434F'
+    BLACK: '#30434F',
+    GREY: '#BDBDBD'
 
 
 }

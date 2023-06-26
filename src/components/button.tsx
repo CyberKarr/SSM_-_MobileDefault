@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 import styles from './styles'
 import { COLORS } from "../assets/COLORS";
 
-export function Button(props: { text: String, action: () => any, type: String }) {
+export function Button(props: { text: String, action: () => any, type: String, isDisabled?: boolean }) {
 
     let color;
 
@@ -12,7 +12,6 @@ export function Button(props: { text: String, action: () => any, type: String })
         case "primary":
             color = COLORS.SUCCESS
             break;
-
         default:
             color = COLORS.MAIN
             break;
@@ -20,7 +19,8 @@ export function Button(props: { text: String, action: () => any, type: String })
 
     return (
         <RectButton
-            style={[{ backgroundColor: color }, styles.button]}
+            enabled={!props.isDisabled}
+            style={props.isDisabled ? styles.button : [styles.button, { backgroundColor: color }]}
             onPress={props.action}>
             <View
                 style={styles.buttonIcon}

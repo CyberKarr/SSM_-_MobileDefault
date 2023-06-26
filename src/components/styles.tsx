@@ -5,7 +5,7 @@ import { RFValue } from 'react-native-responsive-fontsize'
 
 const styles = StyleSheet.create({
     button: {
-        // backgroundColor: COLORS.SUCCESS,
+        backgroundColor: COLORS.GREY,
         height: RFValue(38),
         flexDirection: 'row',
         borderRadius: 10,
@@ -37,6 +37,17 @@ const styles = StyleSheet.create({
         width: RFValue(200),
         maxWidth: RFValue(220),
     },
+
+    picker: {
+        fontSize: RFValue(40),
+        height: RFValue(40),
+        marginBottom: RFValue(5),
+        paddingHorizontal: RFValue(12),
+        borderBottomWidth: .5,
+        width: RFValue(200),
+        maxWidth: RFValue(220),
+        alignSelf: 'center'
+    }
 })
 
 export default styles;

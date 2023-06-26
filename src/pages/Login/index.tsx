@@ -20,6 +20,14 @@ const Login = ({ navigation }) => {
         navigation.navigate('ResetPassword')
     }
 
+    function handleLogin() {
+        navigation.navigate('Home')
+    }
+
+    function handleSignUp() {
+        navigation.navigate('SignUp')
+    }
+
     const [fontsLoaded] = useFonts({
         Roboto_400Regular,
         Roboto_500Medium,
@@ -63,9 +71,9 @@ const Login = ({ navigation }) => {
                                 Esqueci minha senha
                             </Text>
                         </TouchableHighlight>
-                        <Button text={"Entrar"} action={() => ""} type={"primary"} />
+                        <Button text={"Entrar"} action={handleLogin} type={"primary"} />
 
-                        <Button text={"Criar conta"} action={() => ""} type={"secondary"} />
+                        <Button text={"Criar conta"} action={handleSignUp} type={"secondary"} />
 
                     </KeyboardAvoidingView>
                 </View>
