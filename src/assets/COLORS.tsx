@@ -9,7 +9,9 @@ export const COLORS = {
     EFFECT: '#FF6842',
     BACKGROUND: '#FFF',
     BLACK: '#30434F',
-    GREY: '#BDBDBD'
+    GREY: '#BDBDBD',
+    RED: '#ed585eff',
+    YELLOW: '#EBAA49'
 
 
 }

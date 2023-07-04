@@ -1,11 +1,10 @@
-import { View, Text, ScrollView } from 'react-native';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { ScrollView, Text, View } from 'react-native';
 
-import styles from './styles'
+import { Button } from '../../components/button';
 import { Input } from '../../components/input';
 import { Select } from '../../components/select';
-import { SelectItem } from '../../components/_interfaces';
-import { Button } from '../../components/button';
+import styles from './styles';
 
 const SignUp = ({ navigation }) => {
 

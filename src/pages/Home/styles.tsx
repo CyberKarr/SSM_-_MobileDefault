@@ -1,13 +1,14 @@
 import { StyleSheet, StatusBar } from 'react-native'
 import { COLORS } from '../../assets/COLORS';
 import { RFValue } from 'react-native-responsive-fontsize'
+import { Ubuntu_500Medium, Ubuntu_700Bold } from '@expo-google-fonts/ubuntu';
 
 const styles = StyleSheet.create({
 
     container: {
         padding: 0,
         flex: 1,
-        backgroundColor: COLORS.GREY,
+        backgroundColor: COLORS.BACKGROUND,
         zIndex: 1
     },
 
@@ -25,23 +26,25 @@ const styles = StyleSheet.create({
     },
 
     body: {
-        flex: 12,
-        ustifyContent: 'flex-start',
+        flex: 10.5,
+        justifyContent: 'flex-start',
         backgroundColor: COLORS.BACKGROUND,
         alignItems: 'center',
-        padding: RFValue(10),
+        paddingHorizontal: RFValue(10),
         zIndex: -1
     },
 
-    floatingButton: {
-        bottom: 16,
-        right: 16,
-        backgroundColor: 'red',
-        borderRadius: 25,
-        width: 100,
-        height: 100,
-        justifyContent: 'center',
-        alignItems: 'center',
+    greeting: {
+        flex: 1.5,
+        paddingLeft: RFValue(20),
+        alignItems: 'flex-start',
+        justifyContent: 'center'
+    },
+
+    greetingText: {
+        color: COLORS.BLACK,
+        fontSize: RFValue(20),
+        fontWeight: '500'
     },
 
     footer: {
@@ -56,7 +59,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         transform: [{ rotate: '-70deg' }],
         position: 'absolute',
-        top: 300,
+        top: 280,
         left: 180,
         zIndex: -1,
         opacity: 0.3,
@@ -71,7 +74,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         transform: [{ rotate: '-70deg' }],
         position: 'absolute',
-        top: 300,
+        top: 280,
         left: 140,
         zIndex: -2,
         opacity: 0.2,
@@ -86,7 +89,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         transform: [{ rotate: '-70deg' }],
         position: 'absolute',
-        top: 300,
+        top: 280,
         left: 100,
         zIndex: -3,
         opacity: 0.1,

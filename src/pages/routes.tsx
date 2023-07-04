@@ -8,6 +8,7 @@ import Home from './Home'
 import Login from './Login'
 import ResetPassword from './ResetPassword'
 import SignUp from './SignUp'
+import Anamnese from './Anamnese'
 
 const AppStack = createStackNavigator();
 
@@ -27,6 +28,7 @@ const Routes = () => {
                 <AppStack.Screen name="Home" component={Home} />
                 <AppStack.Screen name="ResetPassword" component={ResetPassword} />
                 <AppStack.Screen name="SignUp" component={SignUp} />
+                <AppStack.Screen name="Anamnese" component={Anamnese} />
             </AppStack.Navigator>
         </NavigationContainer>
     )

@@ -82,7 +82,38 @@ const styles = StyleSheet.create({
     cardButtonText: {
         fontSize: RFValue(18),
         color: COLORS.WHITE
+    },
+
+    infoContent: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        height: RFValue(36),
+        width: '100%',
+        borderRadius: RFValue(36)
+    },
+
+    infoIcon: {
+        backgroundColor: COLORS.BACKGROUND,
+        height: RFValue(28),
+        width: RFValue(28),
+        borderRadius: RFValue(30),
+        marginHorizontal: RFValue(4),
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+
+    infoTextArea: {
+        justifyContent: 'center',
+        alignItems: 'flex-start'
+
+    },
+
+    infoText: {
+        color: COLORS.WHITE,
+        paddingStart: RFValue(10),
+        fontSize: RFValue(18)
     }
+
 })
 
 export default styles;

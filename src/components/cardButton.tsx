@@ -48,9 +48,6 @@ export function CardButton(props: { icon: string, text: string, action: () => an
         default:
             Component = <View />
             break;
-
-        // usercheck
-        // check - saquare
     }
 
     return (
