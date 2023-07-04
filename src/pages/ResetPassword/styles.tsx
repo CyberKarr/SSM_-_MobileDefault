@@ -10,43 +10,42 @@ const styles = StyleSheet.create({
     },
 
     header: {
-        flex: 4,
+        flex: 2,
         paddingTop: StatusBar.currentHeight,
         justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: COLORS.MAIN,
-        alignItems: 'center'
     },
 
     textHeader: {
         fontSize: RFValue(20),
         color: COLORS.WHITE,
-        textAlign: 'center',
-        paddingBottom: 25
     },
 
     body: {
         flex: 12,
         alignItems: 'center',
         justifyContent: 'space-evenly',
-        marginHorizontal: RFValue(60),
-        marginVertical: RFValue(60)
+        // margin: RFValue(60),
+        // marginVertical: RFValue(60)
     },
 
     footer: {
-        flex: 1,
+        flex: 0.5,
         backgroundColor: COLORS.MAIN
     },
 
     forms: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: RFValue(2)
+        paddingHorizontal: RFValue(2),
+        marginBottom: RFValue(60)
     },
 
     info: {
         justifyContent: 'center',
-        // marginBottom: RFValue(30),
-
+        marginHorizontal: RFValue(60),
+        marginTop: RFValue(60)
     },
 
     text: {

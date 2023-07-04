@@ -19,7 +19,7 @@ const ResetPassword = ({ navigation }) => {
             </View>
             <View style={styles.body}>
                 <View style={styles.info}>
-                    <Text style={styles.text}>Se os dados estiverem corretos você receberá um email com as informações para redefinir sua senha.</Text>
+                    <Text style={styles.text}>Se os dados estiverem corretos, você receberá um email com as informações para redefinir sua senha.</Text>
                 </View>
                 <View style={styles.forms}>
                     <Input placeholder={'CPF'} onChange={() => ""} type={'default'} />
@@ -28,7 +28,6 @@ const ResetPassword = ({ navigation }) => {
                 </View>
             </View>
             <View style={styles.footer} />
-
         </View>
     )
 

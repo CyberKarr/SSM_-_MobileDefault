@@ -63,9 +63,7 @@ const SignUp = ({ navigation }) => {
                     <Button text={"Cadastrar"} action={handleCheckfields} type={"primary"} isDisabled={true}></Button>
                 </ScrollView>
             </View>
-            <View style={styles.footer}>
-
-            </View>
+            <View style={styles.footer} />
         </View>
     )
 

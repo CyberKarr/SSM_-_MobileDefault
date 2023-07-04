@@ -47,6 +47,41 @@ const styles = StyleSheet.create({
         width: RFValue(200),
         maxWidth: RFValue(220),
         alignSelf: 'center'
+    },
+
+    cardButton: {
+        marginBottom: RFValue(6),
+        width: '100%',
+        height: RFValue(75), //70
+        padding: RFValue(12),
+        borderRadius: RFValue(10),
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        flexDirection: 'row',
+    },
+
+    cardInternViewText: {
+        width: '70%',
+        height: '100%',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        paddingStart: RFValue(15),
+        alignItems: 'center',
+    },
+
+    cardInternViewIcon: {
+        width: '20%',
+        height: '100%',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRightWidth: 1,
+        borderColor: COLORS.WHITE
+    },
+
+    cardButtonText: {
+        fontSize: RFValue(18),
+        color: COLORS.WHITE
     }
 })
 
