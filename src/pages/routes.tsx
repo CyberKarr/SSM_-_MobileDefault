@@ -6,6 +6,7 @@ import { COLORS } from '../assets/COLORS'
 
 import Anamnesis from './Anamnesis'
 import AnamnesisUpdate from './AnamnesisUpdate'
+import AnamnesisCheck from './AnamnesisCheck'
 import Home from './Home'
 import Login from './Login'
 import ResetPassword from './ResetPassword'
@@ -31,6 +32,7 @@ const Routes = () => {
                 <AppStack.Screen name="SignUp" component={SignUp} />
                 <AppStack.Screen name="Anamnesis" component={Anamnesis} />
                 <AppStack.Screen name="AnamnesisUpdate" component={AnamnesisUpdate} />
+                <AppStack.Screen name="AnamnesisCheck" component={AnamnesisCheck} />
             </AppStack.Navigator>
         </NavigationContainer>
     )

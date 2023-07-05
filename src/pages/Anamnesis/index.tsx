@@ -15,6 +15,10 @@ const Anamnesis = ({ navigation }) => {
         navigation.navigate("AnamnesisUpdate")
     }
 
+    function handleCheck() {
+        navigation.navigate("AnamnesisCheck")
+    }
+
     return <View style={styles.container}>
         <View style={styles.header}>
             <Text style={styles.textHeader}>Anamnese</Text>
@@ -31,7 +35,7 @@ const Anamnesis = ({ navigation }) => {
 
             <View style={styles.buttonGroup}>
                 <Button text={"Atualizar Anamnese"} action={handleUpdate} type={"primary"} />
-                <Button text={"Vizualizar Anamnese"} action={() => { }} type={"secondary"} />
+                <Button text={"Vizualizar Anamnese"} action={handleCheck} type={"secondary"} />
             </View>
         </View>
         <View style={styles.footer} />
