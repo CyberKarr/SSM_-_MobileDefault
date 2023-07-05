@@ -56,7 +56,7 @@ const SignUp = ({ navigation }) => {
                     <Input value={telefone} onChange={setTelefone} type={'cel-phone'} placeholder={'Telefone'} mask></Input>
                     <Select items={escolaridades} selectedItem={selectedEscolaridade} setSelectedItem={setSelectedEscolaridade} defaultText={"Escolaridade"} />
                     <Select items={estados} selectedItem={selectedEstado} setSelectedItem={setSelectedEstado} defaultText={"Estado"} />
-                    <Select on={selectedEstado} items={cidades} selectedItem={selectedCidade} setSelectedItem={setSelectedCidade} defaultText={"Município"} isDisabled={selectedEstado === undefined ? true : false} />
+                    <Select items={cidades} selectedItem={selectedCidade} setSelectedItem={setSelectedCidade} defaultText={"Município"} isDisabled={selectedEstado === undefined ? true : false} />
                     <Input value={logradouro} onChange={setLogradouro} type={'default'} placeholder={'Logradouro'} ></Input>
                     <Input value={complemento} onChange={setComplemento} type={'default'} placeholder={'Complemento'} ></Input>
                     <Button text={"Cadastrar"} action={handleCheckfields} type={"primary"} isDisabled={true}></Button>

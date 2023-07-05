@@ -1,42 +1,29 @@
-import React from "react";
-import { RectButton } from 'react-native-gesture-handler'
-import { View, Text } from 'react-native'
-import styles from './styles'
-import { COLORS } from "../assets/COLORS";
 import { Entypo } from "@expo/vector-icons";
+import React from "react";
+import { Text, View } from 'react-native';
+import { COLORS } from "../assets/COLORS";
+import styles from './styles';
 
 export function Information(props: { text: string, type: string }) {
 
     let color;
-
-    switch (props.type) {
-        case "success":
-            color = COLORS.SUCCESS
-            break;
-        case "error":
-            color = COLORS.RED
-            break;
-        case "alert":
-            color = COLORS.YELLOW
-            break;
-        default:
-            color = COLORS.MAIN
-            break;
-    }
-
     let Component;
 
     switch (props.type) {
         case "success":
+            color = COLORS.SUCCESS;
             Component = <Entypo name="check" size={40} color={COLORS.SUCCESS} />
             break;
         case "error":
+            color = COLORS.RED;
             Component = <Entypo name="cross" size={40} color={COLORS.RED} />
             break;
         case "alert":
+            color = COLORS.YELLOW;
             Component = <Entypo name="info" size={30} color={COLORS.YELLOW} />
             break;
         default:
+            color = COLORS.MAIN;
             Component = <View />
             break;
     }

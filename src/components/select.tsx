@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Picker from "react-native-picker-select";
-import styles from './styles'
-import { SelectItem } from './_interfaces'
+import styles from './styles';
+import { SelectItem } from './_interfaces';
 
 export function Select(props: { items: SelectItem[], selectedItem: SelectItem, setSelectedItem: (SelectItem) => void, defaultText: String, isDisabled?: boolean, on?}) {
 

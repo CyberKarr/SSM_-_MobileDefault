@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { TextInput } from 'react-native'
-import { TextInputMask } from 'react-native-masked-text'
+import React from "react";
+import { TextInput } from 'react-native';
+import { TextInputMask } from 'react-native-masked-text';
 
-import styles from './styles'
+import styles from './styles';
 
-export function Input(props: { value?, placeholder: String, onChange, type, mask?: boolean }) {
+export function Input(props: { value?, placeholder: String, onChange, type?, mask?: boolean, isDisabled?: boolean }) {
 
     /*
     * Types must be:
@@ -20,6 +20,7 @@ export function Input(props: { value?, placeholder: String, onChange, type, mask
 
     let maskOptions = {};
     let optionsNeeded = false;
+    let type = props.type;
 
     switch (props.type) {
         case 'cel-phone':
@@ -36,6 +37,13 @@ export function Input(props: { value?, placeholder: String, onChange, type, mask
             }
             optionsNeeded = true;
             break;
+        case 'year':
+            type = 'datetime'
+            maskOptions = {
+                format: 'YYYY'
+            }
+            optionsNeeded = true;
+            break;
         default:
             optionsNeeded = false;
             break;
@@ -49,12 +57,13 @@ export function Input(props: { value?, placeholder: String, onChange, type, mask
         return (
             <TextInputMask
                 value={props.value}
-                style={styles.input}
+                style={props.type === 'year' ? styles.yearInput : styles.input}
                 onChange={handleTextChange}
                 placeholder={props.placeholder.toString()}
-                type={props.type}
-
+                type={type}
                 options={maskOptions}
+                selectTextOnFocus={!props.isDisabled}
+                editable={!props.isDisabled}
             />
         );
     } else if (props.mask) {
@@ -64,7 +73,9 @@ export function Input(props: { value?, placeholder: String, onChange, type, mask
                 style={styles.input}
                 onChange={handleTextChange}
                 placeholder={props.placeholder.toString()}
-                type={props.type}
+                type={type}
+                selectTextOnFocus={!props.isDisabled}
+                editable={!props.isDisabled}
             />
         )
     } else {
@@ -74,7 +85,9 @@ export function Input(props: { value?, placeholder: String, onChange, type, mask
                 style={styles.input}
                 onChange={handleTextChange}
                 placeholder={props.placeholder.toString()}
-                secureTextEntry={props.type === "password" ? true : false}
+                secureTextEntry={type === "password" ? true : false}
+                selectTextOnFocus={!props.isDisabled}
+                editable={!props.isDisabled}
             />
         )
     }

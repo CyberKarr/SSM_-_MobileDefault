@@ -26,6 +26,7 @@ const Login = ({ navigation }) => {
 
     function handleSignUp() {
         navigation.navigate('SignUp')
+        console.log("ok?")
     }
 
     const [fontsLoaded] = useFonts({

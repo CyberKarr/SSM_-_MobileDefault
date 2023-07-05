@@ -1,7 +1,6 @@
-import { StyleSheet, StatusBar } from 'react-native'
+import { StatusBar, StyleSheet } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { COLORS } from '../../assets/COLORS';
-import { RFValue } from 'react-native-responsive-fontsize'
-import { Ubuntu_500Medium, Ubuntu_700Bold } from '@expo-google-fonts/ubuntu';
 
 const styles = StyleSheet.create({
 

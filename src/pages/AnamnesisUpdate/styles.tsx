@@ -26,21 +26,24 @@ const styles = StyleSheet.create({
     body: {
         flex: 12,
         alignItems: 'stretch',
-        marginVertical: RFValue(0),
         backgroundColor: COLORS.WHITE,
+        justifyContent: 'flex-start',
+        width: '100%'
     },
 
     scroll: {
-        padding: RFValue(20),
         alignItems: 'center',
-        justifyContent: 'center',
-        alignSelf: 'stretch',
+        padding: RFValue(20),
+        backgroundColor: COLORS.WHITE,
+        justifyContent: 'flex-start',
+        width: '100%'
+
     },
 
     footer: {
         backgroundColor: COLORS.MAIN,
         flex: 0.5
-    }
+    },
 
 })
 

@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { View, Text } from "react-native";
-import { COLORS } from "../../assets/COLORS";
-import { AntDesign } from '@expo/vector-icons/';
+import { Text, View } from "react-native";
 
-import styles from "./styles";
 import { CardButton } from "../../components/cardButton";
+import styles from "./styles";
 
 const Home = ({ navigation }) => {
 
@@ -13,8 +11,8 @@ const Home = ({ navigation }) => {
     function handleAgendar() {
 
     }
-    function handleAnamnese() {
-        navigation.navigate('Anamnese')
+    function handleAnamnesis() {
+        navigation.navigate('Anamnesis')
 
     }
     function handleResultados() {
@@ -35,7 +33,7 @@ const Home = ({ navigation }) => {
         <View style={styles.body}>
 
             <CardButton action={handleAgendar} icon={"calendar"} text={"Agendar Exame"} type={"second"} />
-            <CardButton action={handleAnamnese} icon={"check"} text={"Anamnese"} type={"third"} />
+            <CardButton action={handleAnamnesis} icon={"check"} text={"Anamnese"} type={"third"} />
             <CardButton action={handleResultados} icon={"history"} text={"Resultados e Exames"} type={"fourth"} />
             <CardButton action={handleSobre} icon={"info"} text={"Sobre"} type={"fifth"} />
 

@@ -1,7 +1,7 @@
 
 import { StyleSheet } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { COLORS } from '../assets/COLORS';
-import { RFValue } from 'react-native-responsive-fontsize'
 
 const styles = StyleSheet.create({
     button: {
@@ -36,6 +36,16 @@ const styles = StyleSheet.create({
         borderBottomWidth: .5,
         width: RFValue(200),
         maxWidth: RFValue(220),
+    },
+
+    yearInput: {
+        height: RFValue(40),
+        backgroundColor: COLORS.WHITE,
+        marginBottom: RFValue(5),
+        paddingHorizontal: RFValue(12),
+        fontSize: RFValue(13),
+        borderBottomWidth: .5,
+        width: '33%',
     },
 
     picker: {
@@ -112,7 +122,35 @@ const styles = StyleSheet.create({
         color: COLORS.WHITE,
         paddingStart: RFValue(10),
         fontSize: RFValue(18)
-    }
+    },
+
+    textItem: {
+        color: COLORS.BLACK,
+        fontSize: RFValue(14)
+    },
+
+    radioButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        width: '33%'
+    },
+
+    radioItemText: {
+        color: COLORS.BLACK,
+        fontSize: RFValue(12)
+    },
+
+    radioButtonGroup: {
+        width: '90%',
+        alignItems: 'stretch',
+        paddingTop: RFValue(20)
+    },
+
+    radioButtonOptionGroup: {
+        paddingTop: RFValue(5),
+        flexDirection: 'row',
+        justifyContent: 'flex-start'
+    },
 
 })
 

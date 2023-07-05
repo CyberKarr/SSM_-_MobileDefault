@@ -1,8 +1,8 @@
 import React from "react";
-import { RectButton } from 'react-native-gesture-handler'
-import { View, Text } from 'react-native'
-import styles from './styles'
+import { Text, View } from 'react-native';
+import { RectButton } from 'react-native-gesture-handler';
 import { COLORS } from "../assets/COLORS";
+import styles from './styles';
 
 export function Button(props: { text: String, action: () => any, type: String, isDisabled?: boolean }) {
 

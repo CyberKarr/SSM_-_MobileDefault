@@ -1,9 +1,9 @@
-import React from "react";
-import { RectButton } from 'react-native-gesture-handler'
-import { View, Text } from 'react-native'
-import styles from './styles'
-import { COLORS } from "../assets/COLORS";
 import { Feather, Octicons } from "@expo/vector-icons";
+import React from "react";
+import { Text, View } from 'react-native';
+import { RectButton } from 'react-native-gesture-handler';
+import { COLORS } from "../assets/COLORS";
+import styles from './styles';
 
 export function CardButton(props: { icon: string, text: string, action: () => any, type: string, isDisabled?: boolean }) {
 

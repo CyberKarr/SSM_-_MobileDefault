@@ -1,6 +1,6 @@
-import { StyleSheet, StatusBar } from 'react-native'
+import { StatusBar, StyleSheet } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { COLORS } from '../../assets/COLORS';
-import { RFValue } from 'react-native-responsive-fontsize'
 
 const styles = StyleSheet.create({
 

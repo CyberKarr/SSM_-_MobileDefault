@@ -1,15 +1,19 @@
 import { useState } from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { Text, View } from 'react-native';
 import { Button } from '../../components/button';
 import { Information } from '../../components/info';
 
 import styles from './styles';
 
-const Anamnese = ({ navigation }) => {
+const Anamnesis = ({ navigation }) => {
 
     const [date, setDate] = useState("25/05/2022");
     const [infoText, setInfoText] = useState("Anamnese Desatualizada");
     const [infoType, setInfoType] = useState("error");
+
+    function handleUpdate() {
+        navigation.navigate("AnamnesisUpdate")
+    }
 
     return <View style={styles.container}>
         <View style={styles.header}>
@@ -26,7 +30,7 @@ const Anamnese = ({ navigation }) => {
             </View>
 
             <View style={styles.buttonGroup}>
-                <Button text={"Atualizar Anamnese"} action={() => { }} type={"primary"} />
+                <Button text={"Atualizar Anamnese"} action={handleUpdate} type={"primary"} />
                 <Button text={"Vizualizar Anamnese"} action={() => { }} type={"secondary"} />
             </View>
         </View>
@@ -35,4 +39,4 @@ const Anamnese = ({ navigation }) => {
 
 }
 
-export default Anamnese;
+export default Anamnesis;
