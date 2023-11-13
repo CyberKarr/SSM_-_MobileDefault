@@ -12,5 +12,6 @@ export const COLORS = {
     GREY: '#BDBDBD',
     RED: '#ed585e',
     YELLOW: '#EBAA49',
+    SHADOW: 'rgba(0, 0, 0, 0.5)'
 
 }

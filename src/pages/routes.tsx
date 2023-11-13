@@ -7,10 +7,13 @@ import { COLORS } from '../assets/COLORS'
 import Anamnesis from './Anamnesis'
 import AnamnesisUpdate from './AnamnesisUpdate'
 import AnamnesisCheck from './AnamnesisCheck'
+import ExamsAndResults from './ExamsAndResults'
 import Home from './Home'
 import Login from './Login'
 import ResetPassword from './ResetPassword'
 import SignUp from './SignUp'
+import Schedule from './Schedule'
+import About from './About'
 
 const AppStack = createStackNavigator();
 
@@ -33,6 +36,9 @@ const Routes = () => {
                 <AppStack.Screen name="Anamnesis" component={Anamnesis} />
                 <AppStack.Screen name="AnamnesisUpdate" component={AnamnesisUpdate} />
                 <AppStack.Screen name="AnamnesisCheck" component={AnamnesisCheck} />
+                <AppStack.Screen name="ExamsAndResults" component={ExamsAndResults} />
+                <AppStack.Screen name="Schedule" component={Schedule} />
+                <AppStack.Screen name="About" component={About} />
             </AppStack.Navigator>
         </NavigationContainer>
     )

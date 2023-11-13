@@ -9,17 +9,18 @@ const Home = ({ navigation }) => {
     const [user, setUser] = useState("Juliana");
 
     function handleAgendar() {
-
+        navigation.navigate('Schedule')
     }
     function handleAnamnesis() {
         navigation.navigate('Anamnesis')
 
     }
     function handleResultados() {
+        navigation.navigate('ExamsAndResults')
 
     }
     function handleSobre() {
-
+        navigation.navigate('About')
     }
 
     return <View style={styles.container} >

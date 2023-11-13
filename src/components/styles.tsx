@@ -1,6 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { COLORS } from '../assets/COLORS';
 
 const styles = StyleSheet.create({
@@ -151,6 +152,79 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start'
     },
+
+    examCardGenericView: {
+        width: '100%',
+        marginTop: RFValue(10),
+        alignItems: 'center',
+        justifyContent: 'center',
+
+    },
+
+    examCardButton: {
+        marginBottom: RFValue(8),
+        width: '100%',
+        height: RFValue(70), //70
+        backgroundColor: COLORS.THIRD,
+        borderRadius: RFValue(10),
+        justifyContent: 'flex-start',
+        alignItems: 'stretch',
+        flexDirection: 'row',
+        shadowOffset: { height: 0, width: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 4,
+        shadowColor: COLORS.BLACK
+    },
+
+    examCardInternViewText: {
+        width: '80%',
+        height: '100%',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        paddingStart: RFValue(15),
+        alignItems: 'center',
+        borderRadius: RFValue(10)
+    },
+
+    examCardInternViewIcon: {
+        width: '20%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderColor: COLORS.WHITE,
+        backgroundColor: COLORS.SECOND,
+        borderRadius: RFValue(10),
+    },
+
+    examCardButtonText: {
+        fontSize: RFValue(16),
+        color: COLORS.WHITE
+    },
+
+    modalPai: {
+        flex: 1
+    },
+
+    modalShadow: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: COLORS.SHADOW
+    },
+
+    modal: {
+        backgroundColor: COLORS.WHITE,
+        padding: RFValue(20),
+        borderRadius: RFValue(10),
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        alignSelf: 'center'
+    },
+
+    modalText: {
+        color: COLORS.BLACK,
+        fontSize: RFValue(16)
+    }
 
 })
 
